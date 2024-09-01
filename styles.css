@@ -54,25 +54,4 @@ header {
 
 .intro-text .highlight-red {
     color: #e74c3c;
-}
 
-.intro-text p {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-.intro-img img {
-    width: 250px;
-    border-radius: 50%;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background-color: #3a3aee;
-    color: #fff;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-}
