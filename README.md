@@ -7,3 +7,7 @@
 
  By leveraging the native integration of GitHub Actions with AWS, this setup streamlines the deployment process, ensuring that the latest version of the website is always up-to-date and 
  accessible via the internet. It is designed to be lightweight, cost-effective, and scalable, utilizing S3's static website hosting capabilities.
+
+##Project Workflow:
+###Create a GitHub Repository
+- Initialize a new GitHub repository for managing the project’s code and configuration.
