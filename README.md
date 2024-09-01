@@ -24,6 +24,8 @@
 - Enable static website hosting for the S3 bucket.
 - Make the bucket public to allow access to website files.
 - Apply a bucket policy to allow public read access to the hosted website content.
+ ![S3](https://github.com/Naimat250/CICD-Github-Actions/blob/e1d6e3d77392625666ba56b7dbab975e7949e0ed/images/s3.PNG)
+
 ## 4: Create the GitHub Actions Workflow (main.yml)
 - Add a .github/workflows/main.yml file to your repository.
 - Configure the workflow to trigger on code pushes to the main branch.
@@ -40,6 +42,8 @@
 ## 6:Deployment Completion
 - The static website will be updated automatically in the S3 bucket.
 - Any outdated files in the bucket will be removed to ensure only the latest version of the site is hosted.
+ ![Deployment](https://github.com/Naimat250/CICD-Github-Actions/blob/e1d6e3d77392625666ba56b7dbab975e7949e0ed/images/workflow.PNG)
+
 
 ## 7: Accessing the Website through S3 URL
 Once the deployment is completed and the website files have been successfully synced to the S3 bucket, you can access the static website using the S3 bucket's URL.
