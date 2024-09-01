@@ -35,11 +35,6 @@ header {
     font-weight: bold;
 }
 
-.logo img {
-    width: 40px;
-    margin-right: 10px;
-}
-
 .intro {
     display: flex;
     justify-content: space-around;
@@ -80,24 +75,4 @@ header {
     text-decoration: none;
     font-size: 1.1rem;
     margin-top: 1.5rem;
-}
-
-footer {
-    padding: 2rem;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.social-icons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons li {
-    margin: 0 10px;
-}
-
-.social-icons img {
-    width: 30px;
 }
