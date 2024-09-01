@@ -9,31 +9,54 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <span>M. Naimat Ullah</span>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>M. Naimat Ullah</h1>
+                    <p>Cloud & DevOps Engineer</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
     <section class="intro">
-        <div class="intro-text">
-            <h1>Hi There, <br> I'm <span class="highlight">M. Naimat Ullah</span></h1>
-            <p>I Am a <span class="highlight-red">Cloud & DevOps Engineer</span></p>
-            <p>This is my demo GitHub Actions CICD using S3 Static Web Hosting</p>
-            <a href="#about" class="btn">About Me</a>
-        </div>
-        <div class="intro-img">
-            <img src="images/myimage.png" alt="M. Naimat Ullah">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Hello, I'm <span>M. Naimat Ullah</span></h2>
+                    <p>I specialize in Cloud & DevOps Engineering, and this is my demo project using GitHub Actions for CICD with AWS S3 static web hosting.</p>
+                    <a href="#projects" class="btn">See My Project</a>
+                </div>
+                <div class="intro-img">
+                    <img src="images/myimage.png" alt="M. Naimat Ullah">
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-details">
+                <h3>GitHub Actions CICD with S3 Static Web Hosting</h3>
+                <p>This project demonstrates the integration of GitHub Actions to automate deployment to an S3 bucket for hosting a static website. The process ensures continuous delivery with each push to the repository.</p>
+                <a href="http://naimatcicd.s3-website-us-east-1.amazonaws.com/" class="btn">View Project on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 M. Naimat Ullah - Cloud & DevOps Engineer</p>
+        </div>
+    </footer>
 </body>
 </html>
