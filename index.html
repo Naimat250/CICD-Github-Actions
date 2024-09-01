@@ -3,93 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps - Zero to Hero</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #24292e;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 1.2em;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-        nav a:hover {
-            border-bottom: 2px solid #ffffff;
-        }
-        .hero {
-            background-color: #2db58d;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 20px 0;
-        }
-        .hero p {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .star {
-            margin: 20px 0;
-        }
-        .star::before, .star::after {
-            content: '★';
-            font-size: 2em;
-            color: #ffffff;
-            margin: 0 5px;
-        }
-        footer {
-            background-color: #24292e;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">YourBrandName</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" class="sign-in">Sign In</a></li>
+                <li><a href="#" class="sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <div>TRAIN WITH [Your Name]</div>
-    <nav>
-        <a href="#">PORTFOLIO</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
-    </nav>
-</header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Web & Mobile App Development</h1>
+            <p>Join us in the exciting world of programming and turn your ideas into reality. Unlock the world of endless possibilities – learn to code and shape the digital future with us.</p>
+            <div class="buttons">
+                <a href="#" class="btn-primary">Join Now</a>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="your-image.png" alt="Hero Image">
+        </div>
+    </section>
 
-<section class="hero">
-    <img src="your-avatar.png" alt="Avatar"> <!-- Replace with your image -->
-    <h1>DEVOPS - ZERO TO HERO</h1>
-    <div class="star"></div>
-    <p>Engineer - Teacher - Learner</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 [Your Name] | All Rights Reserved</p>
-</footer>
+    <!-- Add other sections as needed -->
 
 </body>
 </html>

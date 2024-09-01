@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #111827;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1f2937;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #374151;
+}
+
+nav ul li .sign-in {
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+}
+
+nav ul li .sign-up {
+    background-color: #60a5fa;
+    padding: 8px 15px;
+    color: #111827;
+    border: 1px solid #60a5fa;
+}
+
+nav ul li .sign-up:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background: linear-gradient(90deg, #1f2937 50%, #3b82f6 50%);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.buttons .btn-primary {
+    background-color: #60a5fa;
+    padding: 15px 30px;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.buttons .btn-secondary {
+    background-color: transparent;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons .btn-secondary:hover {
+    background-color: #ffffff;
+    color: #111827;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
