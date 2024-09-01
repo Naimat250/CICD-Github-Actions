@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Actions CI/CD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #24292e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        .content-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 10px;
+        }
+        .content-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #24292e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .code-box {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+        .code-box pre {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GitHub Actions CI/CD Pipeline</h1>
+</header>
+
+<main>
+    <section class="content-section">
+        <h2>Overview</h2>
+        <p>Welcome to the GitHub Actions CI/CD demo page. This page provides an overview of how our continuous integration and continuous deployment pipeline works using GitHub Actions.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Pipeline Stages</h2>
+        <p>Our CI/CD pipeline includes the following stages:</p>
+        <ul>
+            <li><strong>Build:</strong> The application is built using the specified build tools.</li>
+            <li><strong>Test:</strong> Automated tests are run to ensure code quality.</li>
+            <li><strong>Deploy:</strong> The application is deployed to the specified environment.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Example Workflow File</h2>
+        <div class="code-box">
+            <pre>
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Install dependencies
+      run: npm install
+    - name: Run tests
+      run: npm test
+    - name: Build the application
+      run: npm run build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Production
+      run: echo "Deploying to production..."
+            </pre>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Conclusion</h2>
+        <p>This is a basic example of how a CI/CD pipeline can be set up using GitHub Actions. For more complex workflows, additional jobs, and environment-specific configurations can be added as needed.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Your Name | Powered by GitHub Actions</p>
+</footer>
+
+</body>
+</html>
